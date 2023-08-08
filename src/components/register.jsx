@@ -18,7 +18,7 @@ import { FormControlLabel } from '@mui/material';
 // import Select from 'react-select';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from "axios";
-import PdfViewerComponent from "./PdfViewerComponent";
+
 
 
 
@@ -483,15 +483,7 @@ hover:file:bg-violet-100
             
         </form>
    
-        <Modal open={openTerms} onClose={() => setOpenTerms(false)}>
-          <div>
-
-        <div className="PDF-viewer">
-				<PdfViewerComponent document={'../../public/ECO_Agent_Final.pdf'} />
-			</div>
-        <Button className="z-15" onClick={() => {setOpenTerms(false)}}>I Agree</Button>
-          </div>
-      </Modal>
+   
     
             </div>
            
